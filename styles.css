@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #080808;
+  --white: #fefefe;
+  --gray: #565656;
+  --light-light-gray: rgba(120, 118, 118, 0.1);
+  --light-gray: rgba(120, 118, 118, 0.5);
+
+  --teal: #d6dede;
+  --violetred: #a2106d;
+  --orange: #ffa500;
+  --blue: #0071c5;
+  --light-blue: #bfd3eb;
+}
+
+html {
+  background-color: var(--teal);
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.2em;
+  color: var(--black);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+h2 {
+  text-align: center;
+  font-size: 22px;
+}
+h3 {
+  text-align: center;
+}
+form {
+  width: 400px;
+}
+
+/* Navbar CSS */
+.navbar {
+  background-color: var(--blue);
+  height: 50px;
+  word-spacing: 10px;
+  text-align: center;
+}
+.navbar .sections a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 15px 15px;
+}
+.navbar .sections a:hover {
+  background-color: var(--light-gray);
+  color: var(--black);
+  padding: 0px 15px;
+  padding-bottom: 25px;
+}
+.navbar .imglinks {
+  float: left;
+  border: #080808;
+}
+
+/* About CSS */
+.about .about-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--light-blue);
+}
+.about .about-container .bio-img {
+  height: 350px;
+  width: 350px;
+  padding-right: 10px;
+}
+.about .about-container .bio-text {
+  border-style: solid;
+  border-color: #080808;
+  border-width: 1px;
+  width: 400px;
+  flex-grow: 1;
+}
+.about .about-container .bio-text div {
+  padding: 4px;
+}
+.about .about-container .linksbox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 60px;
+}
+/* Employment CSS */
+.employment .intel-employment {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: left;
+  background-color: var(--light-blue);
+}
+.employment .intel-employment img {
+  height: 100px;
+  width: 160px;
+  margin-left: 20px;
+}
+.employment .intel-employment .intel-timeline {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 10px;
+  flex-grow: 0;
+  border-style: solid;
+  border-width: 1px;
+}
+.employment .intel-employment .intel-timeline .intel-time {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+}
+.employment .intel-employment .intel-timeline .intel-title {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.employment .intel-employment .intel-dow {
+  margin: 10px;
+}
+.employment .intel-employment .intel-quick-points {
+  flex-grow: 1;
+  margin-top: 60px;
+  width: 200px;
+}
+.employment .novus-employment {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: left;
+  background-color: var(--light-blue);
+}
+.employment .novus-employment img {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  margin-left: 45px;
+}
+.employment .novus-employment .novus-timeline {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 10px;
+  flex-grow: 0;
+  border-style: solid;
+  border-width: 1px;
+}
+.employment .novus-employment .novus-timeline .novus-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.employment .novus-employment .novus-timeline .novus-time {
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+  width: 205px;
+}
+.employment .novus-employment .novus-dow {
+  margin: 10px;
+}
+.employment .novus-employment .novus-quick-points {
+  flex-grow: 1;
+  margin-top: 60px;
+  width: 200px;
+}
+/* Project CSS */
+.projects li {
+  margin: 10px;
+}
+.projects .project-aries {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--light-blue);
+}
+.projects .project-aries p {
+  margin: 20px;
+}
+.projects .project-aries .project-aries-key-image-component {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.projects .project-aries .project-aries-key-image-component .ares-features {
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 10px;
+  padding-right: 10px;
+  width: 600px;
+  height: 250px;
+}
+.projects .project-mlp {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--light-blue);
+}
+.projects .project-mlp span {
+  margin: 20px;
+}
+.projects .project-mlp .project-mlp-key-image-component {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.projects .project-mlp .project-mlp-key-image-component img {
+  width: 553px;
+}
+.projects .project-mlp .project-mlp-key-image-component .mlp-features {
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 10px;
+  padding-right: 10px;
+  width: 600px;
+  height: 250px;
+}
+/* Contact CSS */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.contact .email-contact {
+  display: flex;
+  justify-content: center;
+}
+.contact span {
+  margin: 10px;
+}
+.contact .contact-clickables .download-resume {
+  margin: 10px;
+  font-size: 15px;
+}
+.contact img {
+  height: 40px;
+}
+.contact-form {
+  border: 1px solid;
+  text-align: left;
+  font-weight: bolder;
+  width: 400px;
+  padding: 20px;
+}
+.contact-form label {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: block;
+}
+.contact-form .description {
+  font-weight: normal;
+  font-size: 15px;
+}
+.contact-form .textinputs input {
+  float: right;
+  height: 20px;
+  width: 200px;
+  display: block;
+}
+.contact-form .textinputs span {
+  resize: both;
+  overflow: auto;
+}
+.contact-form .inputs {
+  font-weight: normal;
+  font-size: 15px;
+}
+.contact-form .buttons {
+  text-align: center;
+}
+.contact-form .buttons .submit {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 10px 50px;
+}
+.contact-form .buttons .reset {
+  background-color: var(--white);
+  padding: 10px 50px;
+  color: var(--black);
+}
+.contact-form .buttons .reset:hover {
+  background-color: var(--gray);
+}
+.contact-form .buttons .submit:hover {
+  background-color: var(--gray);
+}
